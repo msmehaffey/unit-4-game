@@ -1,30 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title> Dodgers Baseball Game </title>
+
 </head>
 <body>
+    
+    <div class="bg">
 
-    <div id="gameName"></div>
+    <div class="container">
 
-    <div id="instructions"></div>
-
-    <div id="targetScore"></div>
-
-    <div> 
-        <h1 id="wins"> Wins: </h1>
-        <h1 id="losses"> Losses: </h1>
+    
+    <div class="row">
+        <div id="gameName">
+            <div class="col-md-6">
+                <h1> Rack up Points With your Favorite Dodgers </h1>
+            </div>  
+        </div>
     </div>
 
-    <div id="box1-3" class="boxScore"><p> Box 1 </p></div>
-    <div id="box4-6" class="boxScore"><p> Box 2 </p></div>
-    <div id="box7-9" class="boxScore"><p> Box 3 </p></div>
-    <div id="box10-12" class="boxScore"><p> Box 4 </p></div>
-    <div id="userScore"></div>
-    <div></div>
+    <div class="row">
+        <div class="col-md-9">
+            <div id="instructions">
+                    <p> You will be given a random number of at the start of the game.
+                    </p>
+                    <p>
+                        There are four players below: Enrique Hernandez, Yasiel Puig, Chris Taylor and Cody Bellinger. By clicking on a player you will add a specific amount of points to your total score.
+                    </p>
+                    <p>
+                        You win the game by matching your total points to the random number on the left of the screen. You lose the game if your total points goes above the random number.
+                    </p>
+                    <p>
+                        The value of each player is hidden from you until you click on it.
+                    </p>
+                    <p>
+                        Each time when the game starts, the game will change the value of each player.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div id="targetScore"></div>
+        </div>
+
+        <div class="col-md-2">
+            <div> 
+                <h1 id="wins"> Wins: 0 </h1>
+                <h1 id="losses"> Losses: 0 </h1>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="row">
+                <div id="box1-3" class="boxScore"> 
+                    <img src="./assets/images/enrique.jpg" alt="Enrique Hernandez"> 
+                </div>
+                <div id="box4-6" class="boxScore">
+                    <img src="./assets/images/yasielPuig.jpg" alt="Yasiel Puig">
+                </div>
+            </div>
+            <div class="row">
+                <div id="box7-9" class="boxScore">
+                    <img src="./assets/images/ct3.jpg" alt="Chris Taylor">
+                </div>
+                <div id="box10-12" class="boxScore">
+                    <img src="./assets/images/bellinger.jpg" alt="Cody Bellinger">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div id="scoreLiner"> 
+                        <h3> Your total score is: </h3> 
+                </div>
+            </div>
+            <div class="row">
+                <div id="scoreHolder">
+                <div id="userScore"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./assets/javascript/game.js"></script>

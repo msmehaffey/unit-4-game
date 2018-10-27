@@ -24,6 +24,7 @@ function beginGame() {
         box4 = Math.floor(Math.random() * 3) + 10;
         target = Math.floor(Math.random() * 102) + 19;
         $("#targetScore").html(target);
+        $("#userScore").empty();
     }
 
     resetNumbers();
